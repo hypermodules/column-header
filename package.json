@@ -1,0 +1,43 @@
+{
+  "name": "column-header",
+  "version": "1.0.0",
+  "description": "A column header component",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js | tap-spec && standard | snazzy",
+    "build": "browserify index.js -o dist/bundle.js -p [ css-extract -o dist/bundle.css ]",
+    "start": "budo index.js:dist/bundle.js --live --open --css dist/bundle.css -- -p [ css-extract -o dist/bundle.css ]",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypermodules/column-header.git"
+  },
+  "author": "Bret Comnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hypermodules/column-header/issues"
+  },
+  "homepage": "https://github.com/hypermodules/column-header#readme",
+  "devDependencies": {
+    "@tap-format/spec": "^0.2.0",
+    "browserify": "^13.1.0",
+    "budo": "^9.2.0",
+    "css-extract": "^1.1.2",
+    "snazzy": "^5.0.0",
+    "standard": "^8.0.0",
+    "tape": "^4.6.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "sheetify": "^5.1.0",
+    "yo-yo": "^1.2.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "sheetify/transform"
+      ]
+    ]
+  }
+}
