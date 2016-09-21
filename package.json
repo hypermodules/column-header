@@ -1,12 +1,12 @@
 {
-  "name": "column-header",
+  "name": "flex-table",
   "version": "1.0.0",
-  "description": "A column header component",
+  "description": "A flexbox table component",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js | tap-spec && standard | snazzy",
     "build": "browserify index.js -o dist/bundle.js -p [ css-extract -o dist/bundle.css ]",
-    "start": "budo index.js:dist/bundle.js --live --open --css dist/bundle.css -- -p [ css-extract -o dist/bundle.css ]",
+    "start": "budo index.js:dist/bundle.js --live --open -- -p [ css-extract -o dist/bundle.css ]",
     "prepublish": "npm run build"
   },
   "repository": {
