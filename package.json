@@ -25,7 +25,7 @@
     "budo": "^9.2.0",
     "css-extract": "^1.1.2",
     "snazzy": "^5.0.0",
-    "standard": "^8.0.0",
+    "standard": "^8.4.0",
     "tape": "^4.6.0",
     "watchify": "^3.7.0"
   },
